@@ -28,7 +28,7 @@
       {
         "step": 1,
         "title": "Register for Account",
-        "description": "Sign up for a free Ship Jet account and instantly receive your personal mailbox number and US shipping address.",
+        "description": "Sign up for a free AuraShip account and instantly receive your personal mailbox number and US shipping address.",
         "icon": "UserPlus"
       },
       {
@@ -51,15 +51,15 @@
       }
     ],
     "videoGuide": {
-      "title": "Video Walkthrough: Ship Jet Dashboard & Services",
+      "title": "Video Walkthrough: AuraShip Dashboard & Services",
       "description": "Watch this brief 2-minute video to see how to use your new US shipping address, upload invoices, and navigate your dashboard.",
       "url": "/videos/how-it-works.mp4",
       "poster": "/images/video-poster.png"
     }
   },
   "aboutUs": {
-    "title": "About Ship Jet",
-    "description": "Ship Jet is your trusted partner in seamless, cost-effective international logistics. We specialize in freight forwarding and courier services — connecting Jamaica to the world with unmatched reliability, speed, and transparency.",
+    "title": "About AuraShip",
+    "description": "AuraShip is your trusted partner in seamless, cost-effective international logistics. We specialize in freight forwarding and courier services — connecting Jamaica to the world with unmatched reliability, speed, and transparency.",
     "features": [
       "Real-time shipment tracking & email notifications",
       "Transparent, per-pound pricing — no surprises",
@@ -71,15 +71,15 @@
   },
   "contact": {
     "title": "Get In Touch",
-    "subtitle": "Have questions about packages, rates, or custom shipping needs? Our support team is here to help.",
-    "address": "36 1/2 Lyndhurst Road, Kingston, Jamaica",
-    "phone": "(876) 286-8600",
-    "email": "shipjetc@gmail.com",
-    "hours": "Mon - Fri: 8:30 AM - 5:00 PM | Sat: 9:00 AM - 1:00 PM",
-    "whatsapp": "(876) 286-8600",
+    "subtitle": "Questions about your shipment? Contact our dedicated support team for fast, reliable answers.",
+    "address": "11011 Keystone Dr, Wyoming, USA",
+    "phone": "(876) 123-1234",
+    "email": "auraship@aurastreamdigitallab.com",
+    "hours": "Mon - Fri: 8:00 AM - 5:00 PM | Sat: 8:00 AM - 5:00 PM",
+    "whatsapp": "(876) 123-1234",
     "socials": {
-      "instagram": "https://instagram.com/shipjetcourier",
-      "facebook": "https://facebook.com/shipjetcourier"
+      "instagram": "https://instagram.com/a",
+      "facebook": "https://facebook.com/s"
     }
   },
   "stats": [

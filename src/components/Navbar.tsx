@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Package, Plane } from 'lucide-react';
+import { Menu, X, Plane } from 'lucide-react';
 import siteContent from '@/data/siteContent.json';
 
 export default function Navbar() {
@@ -33,13 +33,8 @@ export default function Navbar() {
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2.5 group">
-            <div className="w-8 h-8 rounded-lg bg-accent-500 flex items-center justify-center shadow-glow-accent group-hover:scale-110 transition-transform duration-200">
-              <Package className="w-4 h-4 text-white" />
-            </div>
-            <span className="font-bold text-lg text-white tracking-tight">
-              Ship<span className="text-accent-400">Jet</span>
-            </span>
+          <a href="#" className="flex items-center h-10 group">
+            <img src="/aurashiplogo.svg" alt="AuraShip Logo" className="h-full w-auto object-contain transition-transform group-hover:scale-[1.02] duration-200" />
           </a>
 
           {/* Desktop Nav */}

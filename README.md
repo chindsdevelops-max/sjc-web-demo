@@ -1,6 +1,6 @@
 # AuraShip — Next.js Logistics SPA
 
-A high-performance, mobile-first Single Page Application for modern logistics operations. Built for the **Tuesday morning demo** for ShipJet Courier, modernizing their legacy static website into a blazing-fast, theme-aware Next.js SPA.
+A high-performance, mobile-first Single Page Application for modern logistics operations. Built for the **Tuesday morning demo** for AuraShip Courier, modernizing their legacy static website into a blazing-fast, edge-ready Next.js SPA.
 
 ---
 
@@ -30,7 +30,7 @@ npm start
 
 ### Tech Stack
 - **Framework**: Next.js 14+ (App Router + Turbopack)
-- **Styling**: Tailwind CSS v4 with light/dark mode support
+- **Styling**: Tailwind CSS v4 with premium brand-indigo corporate theme
 - **Icons**: Lucide React
 - **Language**: TypeScript (strict mode)
 - **Data**: Decoupled JSON (mock Headless CMS)
@@ -59,14 +59,13 @@ src/
 
 ## 🎨 Theming & Design
 
-### Light/Dark Mode
-- **Automatic**: Respects system `prefers-color-scheme`
+### Corporate Branding Theme
+- **Consistent Theme**: Locked to a single premium brand-indigo corporate theme to maintain strong branding and high readability.
 - **CSS Variables**: Root colors defined in `globals.css`
-- **Tailwind**: Use `dark:` classes for dark-mode specific styles
 - **Colors**:
-  - Primary: Deep blue (#0284c7 → #075985)
-  - Secondary: Red (#dc2626 → #b91c1c)
-  - Neutral: Slate family for text & backgrounds
+  - Primary: Deep indigo/purple gradient
+  - Accent: Vibrant green CTA
+  - Neutral: Sleek dark backgrounds and white text containers
 
 ### Mobile-First Responsive
 All components use `sm:`, `md:`, `lg:` breakpoints for seamless mobile, tablet, and desktop experiences.
@@ -209,7 +208,7 @@ Array of weight tiers:
 - ✅ **Instant Rate Calculator**: Type weight → get JMD cost in real-time
 - ✅ **Concierge Fee Breakdown**: Compare cash vs. debit card costs
 - ✅ **Announcement Banner**: Holiday alerts (no calendar!) 
-- ✅ **Light/Dark Mode**: System-aware theming
+- ✅ **Premium Corporate Theme**: Locked brand-indigo style for maximum visual clarity
 - ✅ **Mobile-First**: Responsive on all devices
 - ✅ **Type-Safe**: Full TypeScript coverage
 - ✅ **Zero External APIs**: Pure JSON-based data

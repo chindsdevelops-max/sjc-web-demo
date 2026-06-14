@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { Package, ArrowLeft, Mail, Lock, User, CheckCircle2, Shield } from 'lucide-react';
+import { ArrowLeft, Mail, Lock, User, CheckCircle2, Shield } from 'lucide-react';
 import siteContent from '@/data/siteContent.json';
 
 // Nested Component that uses useSearchParams
@@ -97,7 +97,7 @@ function AuthFormContainer() {
           </h2>
           <p className="text-slate-500 text-sm leading-relaxed">
             {activeTab === 'register' 
-              ? 'Your Ship Jet mailbox has been successfully provisioned. You are ready to start shipping!' 
+              ? 'Your AuraShip mailbox has been successfully provisioned. You are ready to start shipping!' 
               : 'Successfully signed in. Preparing your courier tracking dashboard...'}
           </p>
         </div>
@@ -345,13 +345,8 @@ export default function AuthPage() {
           Back to Homepage
         </a>
         
-        <a href="/" className="flex items-center gap-2 group">
-          <div className="w-7 h-7 rounded-lg bg-accent-500 flex items-center justify-center shadow-glow-accent group-hover:scale-105 transition-transform duration-200">
-            <Package className="w-3.5 h-3.5 text-white" />
-          </div>
-          <span className="font-bold text-sm text-white tracking-tight">
-            Ship<span className="text-accent-400">Jet</span>
-          </span>
+        <a href="/" className="flex items-center h-9 group">
+          <img src="/aurashiplogo.svg" alt="AuraShip Logo" className="h-full w-auto object-contain transition-transform group-hover:scale-[1.02] duration-200" />
         </a>
       </div>
 
@@ -369,7 +364,7 @@ export default function AuthPage() {
 
       {/* Footer */}
       <div className="relative z-10 max-w-6xl w-full mx-auto text-center text-[10px] text-white/45">
-        &copy; {new Date().getFullYear()} Ship Jet Courier. Demo Account Sandbox. All connections log-recorded.
+        &copy; {new Date().getFullYear()} AuraShip Courier. Demo Account Sandbox. All connections log-recorded.
       </div>
     </div>
   );

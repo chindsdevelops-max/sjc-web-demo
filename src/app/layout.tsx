@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Ship Jet — Shippin\' At Jet Speed',
+  title: 'AuraShip — Shippin\' At Aura Speed',
   description:
-    'Ship Jet Courier connects Jamaica to the world with air & sea freight forwarding, transparent per-pound pricing, and Monday & Friday flight arrivals.',
-  keywords: 'shipping Jamaica, courier Jamaica, freight forwarding, Ship Jet, air freight, sea freight',
+    'AuraShip Courier connects Jamaica to the world with air & sea freight forwarding, transparent per-pound pricing, and Monday & Friday flight arrivals.',
+  keywords: 'shipping Jamaica, courier Jamaica, freight forwarding, AuraShip, air freight, sea freight',
   openGraph: {
-    title: 'Ship Jet — Shippin\' At Jet Speed',
+    title: 'AuraShip — Shippin\' At Aura Speed',
     description:
       'Reliable international logistics connecting Jamaica to the world. Transparent per-pound pricing, Monday & Friday flights.',
     type: 'website',

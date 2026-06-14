@@ -227,7 +227,7 @@ export default function ContactSection() {
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Message Sent!</h3>
                     <p className="text-slate-500 dark:text-slate-400 max-w-md mx-auto text-sm">
-                      Thank you for contacting Ship Jet. Our customer service team has received your message and will reply within 24 business hours.
+                      Thank you for contacting AuraShip. Our customer service team has received your message and will reply within 24 business hours.
                     </p>
                   </div>
                   <button

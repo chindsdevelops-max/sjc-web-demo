@@ -1,6 +1,6 @@
 'use client';
 
-import { Package, Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import siteContent from '@/data/siteContent.json';
 
 export default function Footer() {
@@ -30,14 +30,9 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="md:col-span-2 space-y-4">
-            <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-lg bg-accent-500 flex items-center justify-center shadow-glow-accent">
-                <Package className="w-4 h-4 text-white" aria-hidden="true" />
-              </div>
-              <span className="font-bold text-lg text-white tracking-tight">
-                Ship<span className="text-accent-400">Jet</span>
-              </span>
-            </div>
+             <div className="flex items-center h-12 mb-2">
+               <img src="/aurashiplogo.svg" alt="AuraShip Logo" className="h-full w-auto object-contain -ml-2" />
+             </div>
             <p className="text-sm text-slate-400 max-w-xs leading-relaxed">
               Your trusted courier partner connecting Jamaica to the world. Monday & Friday flight arrivals, transparent pricing, and concierge shopping assistance.
             </p>
@@ -95,7 +90,7 @@ export default function Footer() {
         {/* Divider + copyright */}
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-slate-500">
-            <p>&copy; {currentYear} Ship Jet Courier. All rights reserved. Demo build for shipjetcourier.com.</p>
+            <p>&copy; {currentYear} AuraShip Courier. All rights reserved.</p>
             <p className="flex items-center gap-2">
               Built with Next.js &amp; Tailwind CSS
               <span className="text-white/20">•</span>
