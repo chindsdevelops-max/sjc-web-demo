@@ -83,8 +83,7 @@ export default function ConciergeCalculator() {
               />
             </div>
             <p className="text-xs text-slate-400 dark:text-slate-500 mt-2">
-              Exchange rate: 1 USD = J${conciergeFees.exchangeRate.toFixed(2)}{' '}
-              <span className="text-primary-400 dark:text-primary-500">({conciergeFees.exchangeRateNote})</span>
+              Exchange rate: 1 USD = J${conciergeFees.exchangeRate.toFixed(2)}
             </p>
           </label>
 

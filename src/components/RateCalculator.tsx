@@ -56,7 +56,10 @@ export default function RateCalculator() {
           </span>
           <h2 className="section-title">Shipping Rate Calculator</h2>
           <p className="section-subtitle max-w-lg mx-auto">
-            Type your package weight in lbs — we&#39;ll instantly look up the exact JMD rate from our live table.
+            Type your package weight in lbs — we&#39;ll instantly look up the exact JMD rate for air shipments. For sea freight cargo rates, please{' '}
+            <a href="#contact" className="font-semibold underline text-primary-600 hover:text-accent-500 transition-colors">
+              contact us
+            </a>.
           </p>
         </div>
 
@@ -115,7 +118,7 @@ export default function RateCalculator() {
                   Rate found for {weight} lb{parseFloat(weight) !== 1 ? 's' : ''}
                 </span>
               </div>
-              <div className="flex items-end justify-between gap-4">
+              <div className="flex items-end justify-between gap-4 mb-4">
                 <div>
                   <p className="text-xs uppercase tracking-widest text-primary-500 dark:text-primary-400 mb-1">Weight</p>
                   <p className="text-xl font-bold text-slate-800 dark:text-white">{result.weight} lbs</p>
@@ -126,6 +129,14 @@ export default function RateCalculator() {
                     J${result.rateJmd.toLocaleString()}
                   </p>
                 </div>
+              </div>
+              <div className="pt-3 border-t border-primary-200 dark:border-primary-800/40 text-center">
+                <p className="text-xs text-primary-650 dark:text-primary-400">
+                  Rate shown is for <strong>air shipment</strong> only. For sea freight cargo rates, please{' '}
+                  <a href="#contact" className="font-bold underline hover:text-accent-500 transition-colors">
+                    get in touch with our team
+                  </a>.
+                </p>
               </div>
             </div>
           )}

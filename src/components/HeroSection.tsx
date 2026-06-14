@@ -1,14 +1,14 @@
 'use client';
 
-import { AlertTriangle, Plane } from 'lucide-react';
+import { Plane } from 'lucide-react';
 import siteContent from '@/data/siteContent.json';
 
 export default function HeroSection() {
-  const { hero, announcement, flightSchedule } = siteContent;
+  const { hero, flightSchedule } = siteContent;
 
   return (
     <section
-      className="relative w-full min-h-screen flex flex-col overflow-hidden"
+      className="relative w-full min-h-screen flex flex-col overflow-hidden -mt-16"
       style={{ background: 'linear-gradient(135deg, #1e1a6e 0%, #3b34cc 45%, #5b54f5 75%, #7b73fc 100%)' }}
     >
       {/* Animated background orbs */}
@@ -31,23 +31,9 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* ── Announcement Banner ── */}
-      {announcement.active && (
-        <div
-          className="relative z-10 w-full py-2.5 px-4"
-          style={{ background: 'rgba(217, 119, 6, 0.92)', backdropFilter: 'blur(4px)' }}
-        >
-          <div className="container mx-auto max-w-6xl flex items-center justify-center gap-2.5 text-center">
-            <AlertTriangle className="w-4 h-4 flex-shrink-0" style={{ color: '#1e1a6e' }} aria-hidden="true" />
-            <p className="text-sm font-semibold" style={{ color: '#1e1a6e' }}>
-              {announcement.text}
-            </p>
-          </div>
-        </div>
-      )}
 
       {/* ── Hero Content ── */}
-      <div className="relative z-10 flex-1 flex flex-col items-center justify-center container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pt-24 pb-20 text-center">
+      <div className="relative z-10 flex-1 flex flex-col items-center justify-center container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pt-36 pb-20 text-center">
 
         {/* Flight schedule badge */}
         <div
@@ -102,11 +88,9 @@ export default function HeroSection() {
           <a
             id="cta-dashboard"
             href={hero.dashboardUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="btn-secondary text-base px-8 py-4 rounded-2xl"
           >
-            {hero.ctaSecondary} ↗
+            {hero.ctaSecondary}
           </a>
         </div>
 

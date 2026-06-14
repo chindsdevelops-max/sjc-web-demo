@@ -18,7 +18,7 @@ export default function Footer() {
     { label: 'About Us', href: '#about' },
     { label: 'How We Work', href: '#how-we-work' },
     { label: 'Contact', href: '#contact' },
-    { label: 'Login / Register', href: siteContent.hero.dashboardUrl },
+    { label: 'Login / Register', href: siteContent.hero.loginUrl },
   ];
 
   return (

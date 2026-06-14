@@ -41,14 +41,8 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#3b34cc" />
-        {/* Inline script to apply dark/light class before first paint — no flicker */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark');}}catch(e){}})();`,
-          }}
-        />
       </head>
-      <body className="min-h-full flex flex-col bg-white dark:bg-[#08071f] font-sans">
+      <body className="min-h-full flex flex-col bg-white font-sans">
         {children}
       </body>
     </html>

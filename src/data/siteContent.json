@@ -1,11 +1,12 @@
 {
   "hero": {
-    "tagline": "Shippin' At Jet Speed",
-    "title": "Welcome To Ship Jet",
-    "subtitle": "Your trusted courier partner connecting you to Jamaica. Real-time tracking, transparent pricing, and flights arriving Monday & Friday.",
+    "tagline": "Shippin' At Aura Speed",
+    "title": "Welcome To AuraShip",
+    "subtitle": "Reliable Miami-to-Jamaica courier services. Transparent rates , live tracking , and twice-weekly flights.",
     "ctaPrimary": "Calculate Shipping",
-    "ctaSecondary": "Dashboard",
-    "dashboardUrl": "https://shipjetcourier.com"
+    "ctaSecondary": "Register for Free",
+    "dashboardUrl": "/auth?mode=register",
+    "loginUrl": "/auth?mode=login"
   },
   "announcement": {
     "active": true,
@@ -14,7 +15,10 @@
   },
   "flightSchedule": {
     "description": "Flights arrive in Jamaica twice weekly",
-    "days": ["Monday", "Friday"],
+    "days": [
+      "Monday",
+      "Friday"
+    ],
     "pickupNote": "Generally available for pick-up the next day"
   },
   "howWeWork": {
@@ -79,9 +83,21 @@
     }
   },
   "stats": [
-    { "value": "2x", "label": "Flights Weekly" },
-    { "value": "200", "label": "lbs Max Weight" },
-    { "value": "24/7", "label": "Customer Support" },
-    { "value": "99.2%", "label": "On-Time Delivery" }
+    {
+      "value": "2x",
+      "label": "Flights Weekly"
+    },
+    {
+      "value": "200",
+      "label": "lbs Max Weight"
+    },
+    {
+      "value": "24/7",
+      "label": "Customer Support"
+    },
+    {
+      "value": "99.2%",
+      "label": "On-Time Delivery"
+    }
   ]
 }
