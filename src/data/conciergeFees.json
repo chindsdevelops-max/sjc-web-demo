@@ -1,0 +1,18 @@
+{
+  "exchangeRate": 155.50,
+  "exchangeRateNote": "Mock rate for demo. Will be replaced with live Supabase-driven rate.",
+  "fees": {
+    "cash": {
+      "percentage": 5,
+      "label": "Cash Purchase",
+      "description": "5% concierge assistance fee when purchasing with cash",
+      "emoji": "💵"
+    },
+    "debit": {
+      "percentage": 10,
+      "label": "Debit Card Purchase",
+      "description": "10% concierge assistance fee when purchasing with a debit card",
+      "emoji": "💳"
+    }
+  }
+}

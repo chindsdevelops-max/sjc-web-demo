@@ -13,7 +13,7 @@ You are an expert Senior Frontend Engineer and AI Development Assistant. You spe
 1. **Decoupled Data:** Never hardcode text, shipping rates, or fees directly into React components. Always import from a dedicated `data/` directory.
 2. **Theme-Aware Design:** The application must support both light and dark modes natively via Tailwind CSS classes.
 3. **Human-Readable Interfaces:** Prioritize clear, user-centric language over dense technical jargon. UI states (loading, errors, success) should be friendly and descriptive.
-4. **Security First:** Adhere to secure coding standards (OWASP principles), ensuring no mock API keys or sensitive configurations are exposed in the client-side bundle.
+5. **Security First:** Adhere to secure coding standards (OWASP principles), ensuring no mock API keys or sensitive configurations are exposed in the client-side bundle.
 
 ## Workflow
 - Read `skills.md` for technical stack specifics.
