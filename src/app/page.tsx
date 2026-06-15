@@ -1,3 +1,6 @@
+'use client';
+
+import { LayoutProvider, useLayout } from '@/context/LayoutContext';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import HowWeWork from '@/components/HowWeWork';
@@ -6,14 +9,18 @@ import ConciergeCalculator from '@/components/ConciergeCalculator';
 import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import LayoutSwitcher from '@/components/LayoutSwitcher';
 import { AlertTriangle } from 'lucide-react';
 import siteContent from '@/data/siteContent.json';
 
-export default function Home() {
+function MainLayout() {
   const { announcement } = siteContent;
+  const { layoutStyle } = useLayout();
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className={`min-h-screen flex flex-col transition-colors duration-300 ${
+      layoutStyle === 'modern' ? 'bg-slate-50 text-slate-800' : 'bg-[#0f0d3a]'
+    }`}>
       {/* ── Global Top Announcement Banner ── */}
       {announcement.active && (
         <div
@@ -35,6 +42,16 @@ export default function Home() {
       <ConciergeCalculator />
       <ContactSection />
       <Footer />
+      <LayoutSwitcher />
     </main>
   );
 }
+
+export default function Home() {
+  return (
+    <LayoutProvider>
+      <MainLayout />
+    </LayoutProvider>
+  );
+}
+
