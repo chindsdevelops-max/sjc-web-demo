@@ -4,12 +4,12 @@ import { LayoutProvider, useLayout } from '@/context/LayoutContext';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import HowWeWork from '@/components/HowWeWork';
-import RateCalculator from '@/components/RateCalculator';
-import ConciergeCalculator from '@/components/ConciergeCalculator';
+import CalculatorsSection from '@/components/CalculatorsSection';
 import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import LayoutSwitcher from '@/components/LayoutSwitcher';
+import MobileAppSection from '@/components/MobileAppSection';
 import { AlertTriangle } from 'lucide-react';
 import siteContent from '@/data/siteContent.json';
 
@@ -38,8 +38,8 @@ function MainLayout() {
       <HeroSection />
       <AboutSection />
       <HowWeWork />
-      <RateCalculator />
-      <ConciergeCalculator />
+      <CalculatorsSection />
+      <MobileAppSection />
       <ContactSection />
       <Footer />
       <LayoutSwitcher />

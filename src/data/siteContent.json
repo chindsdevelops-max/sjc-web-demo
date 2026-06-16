@@ -82,6 +82,26 @@
       "facebook": "https://facebook.com/s"
     }
   },
+  "mobileApp": {
+    "active": true,
+    "comingSoon": true,
+    "title": "AuraShip in Your Pocket",
+    "subtitle": "Introducing the upcoming AuraShip Mobile App — built for fast logistics.",
+    "description": "Our upcoming mobile app will bring real-time tracking and digital mailboxes directly to your device. Manage all your shipments on the go with immediate push notifications and easy camera uploads for invoices.",
+    "features": [
+      "Real-time push notifications on package arrivals",
+      "Scan and upload invoices instantly with your phone camera",
+      "Manage digital mailboxes & shipment statuses on the go",
+      "One-click support & live tracking updates"
+    ],
+    "images": [
+      "/images/screen_1.png",
+      "/images/screen_2.png",
+      "/images/screen_3.png"
+    ],
+    "appStoreUrl": "https://apps.apple.com/app/auraship",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.auraship"
+  },
   "stats": [
     {
       "value": "2x",

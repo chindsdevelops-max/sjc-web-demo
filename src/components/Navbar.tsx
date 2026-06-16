@@ -18,8 +18,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: 'How It Works', href: '#how-we-work' },
-    { label: 'Rates', href: '#rate-calculator' },
-    { label: 'Concierge', href: '#concierge-calculator' },
+    { label: 'Rates & Tools', href: '#calculators' },
     { label: 'About', href: '#about' },
     { label: 'Contact', href: '#contact' },
   ];

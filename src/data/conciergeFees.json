@@ -1,17 +1,22 @@
 {
   "exchangeRate": 155.50,
   "exchangeRateNote": "Mock rate for demo. Will be replaced with live Supabase-driven rate.",
+  "text": {
+    "title": "AuraShip Shopping Assistance",
+    "subtitle": "No credit card to shop online? Use AuraShip's corporate credit card securely to complete your online purchase.",
+    "description": "Our shopping assistance service is designed for customers who want to shop online but don't have a credit card. AuraShip allows you to complete your online purchase using our card securely. Simply pay us back: we charge a 5% fee of the purchase amount if you reimburse us via cash, or a 10% fee if you reimburse us via your debit card."
+  },
   "fees": {
     "cash": {
       "percentage": 5,
       "label": "Cash Purchase",
-      "description": "5% concierge assistance fee when purchasing with cash",
+      "description": "5% fee if you pay via cash",
       "emoji": "💵"
     },
     "debit": {
       "percentage": 10,
       "label": "Debit Card Purchase",
-      "description": "10% concierge assistance fee when purchasing with a debit card",
+      "description": "10% fee if you pay via debit card",
       "emoji": "💳"
     }
   }

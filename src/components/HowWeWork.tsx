@@ -248,14 +248,15 @@ export default function HowWeWork() {
             style={{ backgroundImage: 'linear-gradient(90deg, var(--sjc-border) 0%, rgba(26,181,103,0.2) 100%)' }}
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+          <div className="flex flex-col lg:grid lg:grid-cols-4 gap-8 lg:gap-6 relative">
             {howWeWork.steps.map((step, idx) => {
               const IconComponent = IconMap[step.icon as keyof typeof IconMap] || UserPlus;
               
               return (
                 <div 
                   key={step.step}
-                  className="relative flex flex-col items-center text-center p-6 rounded-2xl bg-[#f8fafc]/50 dark:bg-[#110f38]/40 border border-slate-100 dark:border-primary-950/20 backdrop-blur-sm hover:scale-[1.02] transition-all duration-300"
+                  className="relative flex flex-row items-start text-left p-0 bg-transparent dark:bg-transparent border-0 dark:border-0 backdrop-blur-none hover:scale-100 transition-all duration-300
+                             lg:flex-col lg:items-center lg:text-center lg:p-6 lg:rounded-2xl lg:bg-[#f8fafc]/50 lg:dark:bg-[#110f38]/40 lg:border lg:border-slate-100 lg:dark:border-primary-950/20 lg:backdrop-blur-sm lg:hover:scale-[1.02] gap-5 lg:gap-0"
                 >
                   {/* Step Badge */}
                   <div className="absolute top-4 right-4 w-6 h-6 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold text-slate-500 dark:text-slate-400">
@@ -264,7 +265,7 @@ export default function HowWeWork() {
 
                   {/* Icon Circle */}
                   <div 
-                    className="w-20 h-20 rounded-2xl flex items-center justify-center mb-6 relative group"
+                    className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center shrink-0 mb-0 lg:mb-6 relative group z-10"
                     style={{
                       background: idx % 2 === 0 
                         ? 'linear-gradient(135deg, var(--color-primary-500) 0%, var(--color-primary-700) 100%)' 
@@ -274,22 +275,29 @@ export default function HowWeWork() {
                         : '0 8px 20px rgba(26, 181, 103, 0.25)'
                     }}
                   >
-                    <IconComponent className="w-9 h-9 text-white group-hover:scale-110 transition-transform duration-200" />
+                    <IconComponent className="w-7 h-7 lg:w-9 lg:h-9 text-white group-hover:scale-110 transition-transform duration-200" />
                   </div>
 
-                  {/* Step Title & Desc */}
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                    {step.description}
-                  </p>
+                  {/* Step Title & Desc Container */}
+                  <div className="flex-1 relative p-5 md:p-6 rounded-2xl bg-[#f8fafc]/50 dark:bg-[#110f38]/40 border border-slate-100 dark:border-primary-950/20 backdrop-blur-sm 
+                                  lg:p-0 lg:bg-transparent lg:dark:bg-transparent lg:border-0 lg:backdrop-blur-none lg:static">
+                    <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                      {step.title}
+                    </h3>
+                    <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
 
-                  {/* Arrow Indicator (Mobile/Tablet between elements) */}
+                  {/* Vertical Connecting Line segment (Mobile/Tablet between elements) */}
                   {idx < howWeWork.steps.length - 1 && (
-                    <div className="lg:hidden mt-6 text-accent-500 flex justify-center">
-                      <ArrowDown className="w-5 h-5 animate-pulse-soft" />
-                    </div>
+                    <div 
+                      className="block lg:hidden absolute left-8 top-8 w-0.5 -z-10"
+                      style={{
+                        backgroundImage: 'linear-gradient(180deg, var(--sjc-border) 0%, rgba(26,181,103,0.2) 100%)',
+                        height: 'calc(100% + 2rem)' // Height of card + gap-8 (32px / 2rem)
+                      }}
+                    />
                   )}
 
                   {/* Horizontal Arrow Indicator (Desktop) */}

@@ -10,8 +10,8 @@ export default function Footer() {
   const { layoutStyle } = useLayout();
 
   const services = [
-    { label: 'Shipping Rates', href: '#rate-calculator' },
-    { label: 'Concierge Shopping', href: '#concierge-calculator' },
+    { label: 'Shipping Rates', href: '#calculators' },
+    { label: 'Concierge Shopping', href: '#calculators' },
     { label: 'Air Freight', href: '#' },
     { label: 'Sea Freight', href: '#' },
   ];
