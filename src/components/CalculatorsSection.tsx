@@ -117,7 +117,7 @@ export default function CalculatorsSection() {
             Calculators & Shopping Tools
           </h2>
           <p className={`text-sm md:text-base leading-relaxed max-w-2xl mx-auto ${
-            isModern ? 'text-slate-605' : 'text-slate-300'
+            isModern ? 'text-slate-600' : 'text-slate-350'
           }`}>
             Instantly estimate your air shipping rates or calculate fees for shopping assistance. Contact us directly for bulk sea freight rates.
           </p>
@@ -254,11 +254,11 @@ export default function CalculatorsSection() {
               >
                 <h3 className={`text-base font-semibold ${isModern ? 'text-slate-900' : 'text-slate-900 dark:text-white'}`}>
                   Full Rate Table
-                  <span className={`ml-2 text-xs font-normal ${isModern ? 'text-slate-405' : 'text-slate-400 dark:text-slate-500'}`}>
+                  <span className={`ml-2 text-xs font-normal ${isModern ? 'text-slate-400' : 'text-slate-400 dark:text-slate-500'}`}>
                     ({rateCards.length} weight tiers)
                   </span>
                 </h3>
-                <span className="flex items-center gap-1 text-xs text-primary-605 font-medium">
+                <span className="flex items-center gap-1 text-xs text-primary-600 dark:text-accent-400 font-medium">
                   {showTable ? 'Collapse' : 'Expand'}
                   {showTable ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                 </span>
@@ -293,10 +293,10 @@ export default function CalculatorsSection() {
                                 : 'border-slate-100 dark:border-white/5 hover:bg-primary-50/60 dark:hover:bg-white/5'
                           }`}
                         >
-                          <td className={`py-2 px-3 font-medium ${isActive ? 'text-white' : 'text-slate-755'}`}>
+                          <td className={`py-2 px-3 font-medium ${isActive ? 'text-white' : 'text-slate-700 dark:text-slate-300'}`}>
                             {card.weight} lb{card.weight !== 1 ? 's' : ''}
                           </td>
-                          <td className={`py-2 px-3 text-right font-semibold ${isActive ? 'text-white' : 'text-primary-600'}`}>
+                          <td className={`py-2 px-3 text-right font-semibold ${isActive ? 'text-white' : 'text-primary-600 dark:text-accent-450'}`}>
                             J${card.rateJmd.toLocaleString()}
                           </td>
                         </tr>
@@ -335,7 +335,7 @@ export default function CalculatorsSection() {
             <div className={`p-5 rounded-2xl border text-xs sm:text-sm text-left leading-relaxed mb-6 shadow-sm ${
               isModern 
                 ? 'bg-primary-50/25 border-primary-100/70 text-slate-700' 
-                : 'bg-primary-950/20 border-primary-900/20 text-slate-350 backdrop-blur-sm'
+                : 'bg-primary-950/20 border-primary-900/20 text-slate-300 backdrop-blur-sm'
             }`}>
               <p>
                 {conciergeFees.text.description}
@@ -406,8 +406,8 @@ export default function CalculatorsSection() {
                   <div className={`flex items-center justify-between px-4 py-3 rounded-xl border ${
                     isModern ? 'bg-slate-50 border-slate-100' : 'bg-slate-50 dark:bg-white/5 border-slate-200 dark:border-white/10'
                   }`}>
-                    <span className="text-sm text-slate-550">Base cost (USD → JMD):</span>
-                    <span className="text-sm font-semibold text-slate-800">{fmt(conciergeCalculations.baseJmd)}</span>
+                    <span className="text-sm text-slate-500 dark:text-slate-400">Base cost (USD → JMD):</span>
+                    <span className="text-sm font-semibold text-slate-800 dark:text-white">{fmt(conciergeCalculations.baseJmd)}</span>
                   </div>
 
                   {/* Side-by-side payment options */}
@@ -468,7 +468,7 @@ export default function CalculatorsSection() {
                     isModern ? 'bg-accent-50 border-accent-100' : 'bg-accent-50 dark:bg-accent-950/30 border border-accent-200 dark:border-accent-800/50'
                   }`}>
                     <TrendingDown className="w-5 h-5 text-accent-600 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-xs sm:text-sm text-accent-805">
+                    <p className="text-xs sm:text-sm text-accent-800 dark:text-accent-300">
                       <span className="font-bold">Save {fmt(conciergeCalculations.savings)}</span> by paying cash instead of using your debit card!
                     </p>
                   </div>

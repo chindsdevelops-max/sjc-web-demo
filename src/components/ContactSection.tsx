@@ -101,10 +101,16 @@ export default function ContactSection() {
           <span className={isModern ? 'inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest bg-primary-50 text-primary-700' : 'section-label'}>
             Connect
           </span>
-          <h2 className={isModern ? 'text-3xl md:text-5xl font-extrabold text-slate-900 mt-3 mb-4 tracking-tight' : 'section-title'}>
+          <h2 className={isModern 
+            ? 'text-3xl md:text-5xl font-extrabold text-slate-900 mt-3 mb-4 tracking-tight' 
+            : 'text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-4 tracking-tight'
+          }>
             {contact.title || "Get In Touch"}
           </h2>
-          <p className={isModern ? 'text-slate-650 text-base max-w-xl mx-auto' : 'section-subtitle'}>
+          <p className={isModern 
+            ? 'text-slate-600 text-base max-w-xl mx-auto' 
+            : 'text-slate-600 dark:text-slate-400 text-base max-w-xl mx-auto'
+          }>
             {contact.subtitle || "Have questions about packages, rates, or custom shipping needs? Our support team is here to help."}
           </p>
         </div>
@@ -130,7 +136,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-0.5">Address</h4>
-                    <p className="text-slate-700 text-sm leading-relaxed">{contact.address}</p>
+                    <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">{contact.address}</p>
                   </div>
                 </div>
 
@@ -148,7 +154,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-0.5">Phone</h4>
-                    <p className="text-primary-600 font-semibold text-sm group-hover:underline">{contact.phone}</p>
+                    <p className="text-primary-600 dark:text-primary-400 font-semibold text-sm group-hover:underline">{contact.phone}</p>
                   </div>
                 </a>
 
@@ -166,7 +172,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-0.5">Email</h4>
-                    <p className="text-primary-600 font-semibold text-sm group-hover:underline break-all">{contact.email}</p>
+                    <p className="text-primary-600 dark:text-primary-400 font-semibold text-sm group-hover:underline break-all">{contact.email}</p>
                   </div>
                 </a>
 
@@ -179,7 +185,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-0.5">Business Hours</h4>
-                    <p className="text-slate-700 text-sm leading-relaxed">{contact.hours}</p>
+                    <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">{contact.hours}</p>
                   </div>
                 </div>
               </div>
@@ -196,8 +202,8 @@ export default function ContactSection() {
                   <MessageSquare className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900 text-base">WhatsApp Support</h4>
-                  <p className="text-slate-500 text-xs">Chat directly with a support agent</p>
+                  <h4 className="font-bold text-slate-900 dark:text-white text-base">WhatsApp Support</h4>
+                  <p className="text-slate-500 dark:text-slate-400 text-xs">Chat directly with a support agent</p>
                 </div>
               </div>
               
